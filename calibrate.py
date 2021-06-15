@@ -22,8 +22,8 @@ fan.start(0);
 i = 0
 
 hyst = 1
-tempSteps = [50, 70]
-speedSteps = [0, 100]
+tempSteps = [50, 70]  # [°C]
+speedSteps = [0, 100]  # [%]
 cpuTempOld=0
 
 try:
