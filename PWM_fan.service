@@ -1,0 +1,11 @@
+[Unit]
+Description = PWM Fan Control
+After = mediacenter.service
+
+[Service]
+Type = simple
+ExecStart = /usr/bin/python /storage/.kodi/userdata/PWM_fan/PWM_fan.py
+Restart = always
+
+[Install]
+WantedBy = kodi.target
