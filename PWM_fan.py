@@ -39,8 +39,8 @@ PWM_FREQ = 25  # [Hz] Change this value if fan has strange behavior
 # Configurable temperature and fan speed steps
 # tempSteps = [30, 35, 40, 45, 50, 55, 60, 65, 70, 75]  # [°C]
 # speedSteps = [0, 35, 45, 50, 55, 60, 70, 80, 90, 100]  # [%]
-# tempSteps = [50, 55, 60, 65, 70, 75, 80]  # [°C]
-# speedSteps = [0, 35, 40, 50, 60, 75, 100]  # [%]
+tempSteps = [50, 55, 60, 65, 70, 75, 80]  # [°C]
+speedSteps = [0, 35, 40, 50, 60, 75, 100]  # [%]
 
 # Fan speed will change only of the difference of temperature is higher than hysteresis
 hyst = 1
@@ -94,6 +94,7 @@ try:
                     fanSpeedOld = fanSpeed
             cpuTempOld = cpuTemp
             
+        # Uncomment for testing reasons print command below to see the current temperature and fan speed.
         # print("temperature: " + str(cpuTemp) + "     fan speed: " + str(fanSpeed))
             
         # Wait until next refresh
